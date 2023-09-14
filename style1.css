@@ -1,0 +1,105 @@
+/* style.css */
+
+/* Basic styling for the container and task manager app */
+body{
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:grey;
+}
+
+.taskmanagerapp {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for input elements */
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Styling for buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: grey;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Styling for list items */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling for search and filter buttons */
+#search-button {
+    margin-left: 10px;
+}
+
+/* Styling for the app title */
+h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+h2 img {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    input[type="text"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+
+/* Add styling to the task items */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* To push the "Delete" button to the right */
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style the "Delete" button */
+li button {
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
